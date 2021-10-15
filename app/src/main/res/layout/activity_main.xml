@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="90dp"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content"
+                android:src="@drawable/yoga" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Fitness center Admission form"
+                     android:layout_gravity="center"
+                     android:textAlignment="center"
+                     android:textColor="@color/black"
+                     android:textStyle="bold"
+                     android:textSize="15sp">
+
+                 </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ChawkBazar,Chittagong"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15sp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bangladesh"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/person"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+         <View
+             android:layout_width="wrap_content"
+             android:layout_marginTop="5dp"
+             android:layout_height="5dp"
+             android:background="@color/teal_200"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Name : "
+            android:textSize="20dp"
+            android:layout_gravity="center"
+
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/ed1"
+            android:layout_width="324dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textStyle="italic"></EditText>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Address : "
+                android:textSize="20dp"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/ed2"
+                android:layout_width="303dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textStyle="italic"></EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Date :      "
+                android:textSize="20dp"
+                android:textColor="@color/black">
+
+            </TextView>
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" 04,March,1999"
+                android:textSize="20dp"
+                android:textColor="@color/black">
+
+            </TextView>
+
+        </LinearLayout>
+        <RadioGroup
+            android:id="@+id/radiosex"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Gender : "
+                android:textSize="20dp"
+
+                android:textColor="@color/black">
+
+            </TextView>
+           <RadioButton
+               android:id="@+id/radio1"
+               android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:text="Male"
+           android:textSize="20dp"
+           android:checked="true"
+           android:paddingRight="5dp"
+           android:textColor="@color/black">
+
+
+           </RadioButton>
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Female"
+                android:textSize="20dp"
+                android:textColor="@color/black">
+
+
+            </RadioButton>
+        </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Age :   "
+            android:textSize="20dp"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/sp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/teal_200"
+            android:layout_centerHorizontal="true">
+
+        </Spinner>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Sports you Love play : "
+                android:textSize="20dp"
+                android:layout_gravity="center"
+
+                android:textColor="@color/black">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        >
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Football"
+            android:textSize="15sp"
+            android:textColor="@color/black">
+
+        </CheckBox>
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cricket"
+            android:textSize="15sp"
+            android:textColor="@color/black"></CheckBox>
+        <CheckBox
+            android:id="@+id/checkbox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tennis"
+            android:textSize="15sp"
+            android:textColor="@color/black"></CheckBox>
+        <CheckBox
+            android:id="@+id/checkbox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indoor games"
+            android:textSize="15sp"
+            android:textColor="@color/black"></CheckBox>
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Height : "
+                android:textSize="20dp"
+                android:textColor="@color/black">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" Feet"
+                android:textSize="20dp"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/sp2"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/teal_200"
+                android:layout_centerHorizontal="true">
+
+            </Spinner>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" Inch"
+                android:textSize="20dp"
+                android:textColor="@color/black">
+
+            </TextView>
+            <Spinner
+                android:id="@+id/sp3"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/teal_200"
+                android:layout_centerHorizontal="true">
+
+            </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Weight : "
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                ></TextView>
+            <Spinner
+                android:id="@+id/sp4"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/teal_200"
+                android:layout_centerHorizontal="true"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Payment Method :"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+
+                android:textColor="@color/black">
+
+            </TextView>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rocket"
+                android:textSize="15sp"
+                android:textColor="@color/black">
+
+            </CheckBox>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bkash"
+                android:textSize="15sp"
+                android:textColor="@color/black"></CheckBox>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nogod"
+                android:textSize="15sp"
+                android:textColor="@color/black"></CheckBox>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Do you Smoke ? "
+            android:textSize="20dp"
+            android:textColor="@color/black">
+        </TextView>
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp">
+
+        </Switch>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Give a rating to your present body figure :"
+                android:textSize="20dp"
+                android:textColor="@color/black">
+            </TextView>
+
+        </LinearLayout>
+        <RatingBar
+            android:id="@+id/rattingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:stepSize="0.5"
+            >
+
+        </RatingBar>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Finish">
+
+        </Button>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="5dp"
+            android:background="@color/teal_200"
+            >
+
+        </View>
+
+    </LinearLayout>
+</ScrollView>
